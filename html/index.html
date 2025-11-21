@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/estilos_pc.css">
+</head>
+
+<body>
+
+    <nav>
+
+    </nav>
+
+    <section id="presentacion">
+
+        <div id="titulo">
+
+            <h1> Mi Energia</h1>
+
+        </div>
+
+        <div id="informacion">
+            <div id="carta1" class="estandar-carta">
+                <h2>Titulo</h2>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+            <div id="carta2" class="estandar-carta">
+                <h2>Titulo</h2>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+        </div>
+
+    </section> <!-- fin de section información-->
+
+    <section id="estadisticas">
+
+        <div id="tabla">
+
+            <div id="tabulacion">
+
+                <table class="table">
+                    <thead class="table-dark">
+                        <tr id="encabezado"></tr>
+                    </thead>
+                    <tbody id="cuerpo">
+                    </tbody>
+                </table>
+
+            </div><!--fin tabulacion-->
+
+        </div>
+
+        <div id="graficos">
+            <div id="grafico-barra" class="estandar-graficos">
+
+                <canvas id="barra"></canvas>
+
+            </div>
+
+            <div id="grafico-torta" class="estandar-graficos">
+
+                <canvas id="torta"></canvas>
+
+            </div>
+
+        </div>
+
+    </section> <!-- fin de section estadisticas-->
+
+    <section id="calculadora">
+
+        <h1>calculadora</h1>
+        <input type="number" id="kwh">
+        <button onclick="resultado()">calcular</button>
+
+    </section> <!-- fin de section estadisticas-->
+
+    <footer>
+
+    </footer>
+</body>
+
+<!--libreria seewtalert-->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!--libreria chart js-->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!--js locales-->
+<script src="../Js/grafico-barra.js"></script>
+<script src="../Js/grafico-torta.js"></script>
+<script src="../Js/calculadora.js"></script>
+<script src="../Js/tabla.js"></script>
+
+</html>
